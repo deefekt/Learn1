@@ -1,0 +1,206 @@
+
+.header {
+    background-color: #131415;
+    color: #ffffff;
+    height: 75px;
+}
+/* .head__cols {
+    float: left;
+    width: 33.3%;
+}
+.logotype {
+    display: inline-block;
+} 
+nav {
+    margin-top: 25px;
+} */
+
+.head__cols {
+    display: inline-block;
+    vertical-align: middle;
+    height: 75px;
+}
+.header__logo {
+    line-height: 75px;
+    width: 200px;
+}
+nav {
+    width: 650px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.navigation__link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 -6px 0 14px;
+}
+.navigation__title {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color .01s;
+}
+.navigation__icon {
+    display: inline-block;
+    text-decoration: none;
+    height: 20px;
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.nav__icon_main {
+    background: url(../../img/spritesheet.png) 0 0 no-repeat;
+}
+.nav__icon_feeds {
+    background: url(../../img/spritesheet.png) 0 -30px no-repeat;
+}
+.nav__icon_service {
+    background: url(../../img/spritesheet.png) 0 -60px no-repeat;
+}
+.navigation__link:hover .navigation__title {
+    color: #f89513;
+}
+.navigation__link:hover .nav__icon_main {
+    background: url(../../img/spritesheet.png) -30px 0px no-repeat;
+}
+.navigation__link:hover .nav__icon_feeds {
+    background: url(../../img/spritesheet.png) -30px -30px no-repeat;
+}
+.navigation__link:hover .nav__icon_service {
+    background: url(../../img/spritesheet.png) -30px -60px no-repeat;
+}
+.nav__link--active .navigation__title{
+    color: #f89513;
+}
+.nav__link--active .nav__icon_main {
+    background: url(../../img/spritesheet.png) -30px 0px no-repeat;
+}
+.nav__link--active .nav__icon_feeds {
+    background: url(../../img/spritesheet.png) -30px -30px no-repeat;
+}
+.nav__link--active .nav__icon_service {
+    background: url(../../img/spritesheet.png) -30px -60px no-repeat;
+}    
+.nav__link--active:hover .nav__icon_main {
+    filter: grayscale(100%) ;
+}
+.nav__link--active:hover .nav__icon_feeds {
+    filter: grayscale(100%) ;
+}
+.nav__link--active:hover .nav__icon_service {
+    filter: grayscale(100%) ;
+}
+.nav__link--active:hover .navigation__title{
+    filter: grayscale(100%) ;
+}
+
+.contacts {
+    right: 0;
+    text-align: right;
+    width: 200px;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.contacts__desc {
+    display: inline-block;
+    color: #f89513;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color .3s;
+}
+.contacts__desc:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+.contacts__phone {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: .5px
+}
+
+.time  {
+    color: #f89513;
+    font-weight: bold;
+    font-size: 14px;
+}
+.time-lunch {
+    font-weight: 300;
+    color: #221f1f;
+    font-size: 14px;
+}
+.droptown {
+    position: relative;
+    width: 60%;
+    text-align: right;
+}
+.droptown:hover .dropdown-menu{
+    right: 0;
+    left: initial;
+    opacity: 1;
+}
+.dropdown-menu  {
+    border: 0px solid black;
+    border-radius: 2px;
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    text-align: left;
+    top: 100%;  
+    left: -9999px;
+    z-index: 10;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
+    cursor: auto;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.dropdown-menu:before {
+    content: '';
+    display: block;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: -20px;
+    position: absolute;
+}
+.time-block{
+    width: 160px;
+    margin-top: 13px;
+    margin-bottom: -10px;  
+    margin-left: 18px;
+}
+.triangle {
+    border-top: 0px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    width: 0px;
+    height: 0px;
+    bottom: 100%;
+    position: absolute;
+    left: 81%;
+}
+.triangle:before {
+    content: '';
+    display: block;
+    border-top: 0px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ffffff;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+}

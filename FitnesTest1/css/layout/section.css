@@ -1,0 +1,251 @@
+main {
+    font-size: 18px;
+    color: #221f1f;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+ul.breadcrumbs li{
+    display: inline-block;}
+.breadcrumbs__item:after {
+    content: '/';
+}
+.breadcrumbs__item:last-child:after {
+    content: none;
+}
+.breadcrumbs__link {
+    font-style: italic;
+    font-size: 14px;
+    color: #f89513;
+}
+.breadcrumbs__link_active {
+    color: #221f1f;
+    text-decoration: none;
+}
+.breadcrumbs {
+    margin-bottom: 10px;
+    margin-left: 91px;
+}
+
+h1 {
+    font-size: 49px;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.photo {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 90px;
+    text-align: center;
+    margin-top: 4px;
+}
+.feedback {
+    display: inline-block;
+    width: 690px;
+    line-height: 1.66;
+}
+
+.date{font-size: 14px;}
+.ellipse {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;   
+}
+hr {opacity: 20%;
+    width: 880px;
+    margin: 30px 0px 30px 89px;}
+
+.page__text {
+    display: inline-block;
+    text-align: center;
+    margin-left: 360px;
+    margin-top: 65px;
+    font-size: 14px;
+}
+    
+.page__numbers {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.page__navigation:hover {
+    cursor: pointer;
+    color: #f89513;}
+.page, .page__navigation{
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+    font-weight: bold;
+    color: #221f1f;
+}
+.page__down { opacity: .5;
+}
+.page__navigation {
+    transition: color .3s;
+}
+
+.page__active {
+    text-decoration: none;
+    padding: 5px 9px 5px 9px;
+    margin-right: -8px;
+    color: #f89513;
+    background-color: #131415;
+    border-radius: 5px;  
+}
+.page__active:hover {
+    color: #ffffff;
+}
+
+.cta {
+    height: 170px;
+    background: url(../../img/pattern.png);
+    margin: 0px;
+    margin-bottom: 60px;
+    display: block;
+}
+.cta__section {
+    max-width: 3000px;
+    background: #131415;
+}
+.cta__text {
+    color: #ffffff;
+    padding-top: 32px;
+    margin-left: 195px;
+    margin-right: 230px;
+}
+.cta__txt{ 
+    font-weight: bold;
+    color: #f89513;
+}
+.form {
+    border-radius: 3px;
+    background-color: rgb(245, 245, 245);
+    width: 700px;
+    height: 425px;
+    font-size: 14px;
+    margin-left: 180px;
+}
+.form__title {
+    font-size: 49px;
+    font-weight: bold;
+    padding-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+.form__element-title {
+    display: block;
+    margin-bottom: 5px;
+}
+.form__input {
+    width: 265px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+.form__elements {
+    display: inline-block;
+    margin-right: 20px;
+}
+.form__row {
+    margin-left: 70px;
+}
+.form__textarea {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.form__textarea-input {
+    width: 560px;
+    height: 90px;
+    outline: none;
+    border: 2px solid transparent;
+    resize: none;
+    border-radius: 5px;
+}
+.form__textarea-input:focus {
+    border-color:  #f89513;
+}
+.form_input:focus {
+    outline: none;
+    border-color:  #f89513;
+}
+.radio__title {
+    display: block;
+    margin-bottom: 10px;
+}
+.form__radio {
+    display: inline-block;
+    margin-right: 25px;
+}
+.form__radios {
+    margin-left: 70px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.form__submit { display: block;
+    margin-left: 513px;
+    margin-top: -44px;
+    width: 125px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #1c1f1d;
+    border-radius: 5px;
+    transition: background-color .3s;
+    text-transform: uppercase;
+}
+
+.form__buttons {
+    display: inline-block;
+}
+/* button {
+    width: 125px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #1c1f1d;
+    border-radius: 5px;
+    transition: background-color .3s;
+} */
+.form__submit:hover{ background-color: #f89513;}
+
+.form__radio {
+    display: inline-block;
+}
+.radio_name { 
+    padding: 12px;
+}
+.radio_empty{   
+    position: relative;
+}
+.radio-elem {
+    position: absolute;
+    left: -9999px;
+}
+.radio-elem:checked + .radio-fool {
+    background: url(../../img/radistyle.png) -40px 0 no-repeat;
+}
+.radio-empty:hover {
+    cursor: pointer;
+}
+.radio-name:hover {
+    cursor: pointer;
+}
+.radio-fool {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background: url(../../img/radistyle.png) 0 0 no-repeat;
+}
